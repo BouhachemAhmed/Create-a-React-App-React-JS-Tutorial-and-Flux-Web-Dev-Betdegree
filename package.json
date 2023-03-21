@@ -1,0 +1,30 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "\"# react-skeleton\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "babel-preset-react": "^7.0.0-beta.40",
+    "babelify": "^10.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "save": "^2.9.0",
+    "watchify": "^4.0.0"
+  }
+}
+{
+  "presets": [
+      "@babel/preset-env", "@babel/preset-react","es2015", "react", "stage-1"
+   ],
+ "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}
